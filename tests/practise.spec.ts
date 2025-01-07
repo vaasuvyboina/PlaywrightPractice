@@ -1,4 +1,4 @@
-const { chromium } = require('playwright');
+cconst { chromium } = require('playwright');
 import { test, expect } from '@playwright/test';
     const username = "SowjiG6"
     const password = "SowjiG3"
@@ -30,7 +30,7 @@ test('Register Parabank Account', async ({page}) => {
     await page.locator('//*[@id="customer.password"]').fill(password)
     await page.locator('//*[@id="repeatedPassword"]').fill(password)
     await page.click('//*[@id="customerForm"]/table/tbody/tr[13]/td[2]/input')
-    await page.waitForTimeout(5000); //sowji-pull
+    await page.waitForTimeout(5000); //sowji-pull-fetch
     //await page.click('//*[@id="leftPanel"]/ul/li[8]/a')   
     await page.waitForTimeout(5000);
   })
