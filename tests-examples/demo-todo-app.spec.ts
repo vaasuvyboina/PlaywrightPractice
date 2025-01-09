@@ -41,6 +41,7 @@ test.describe('New Todo', () => {
   test('should clear text input field when an item is added', async ({ page }) => {
     // create a new todo locator
     const newTodo = page.getByPlaceholder('What needs to be done?');
+    console.log("abc")
 
     // Create one todo item.
     await newTodo.fill(TODO_ITEMS[0]);

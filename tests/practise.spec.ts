@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 import { test, expect } from '@playwright/test';
-    const username = "SowjiG6"
-    const password = "SowjiG3"
+    const username = "SowjiG7"
+    const password = "SowjiG7"
     const text = "Welcome SowjiG3 SowjiG3"
 test.describe('Parabank Account Services', () => {
   test.beforeEach(async({page})=> {
@@ -11,6 +11,7 @@ test.describe('Parabank Account Services', () => {
   test.afterEach(async({page})=> {
     await page.click('//*[@id="leftPanel"]/ul/li[8]/a') 
     console.log("successfully logged out")
+    console.log("-------")
     
   })
   
