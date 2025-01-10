@@ -11,7 +11,7 @@ test.describe('Parabank Account Services', () => {
   test.afterEach(async({page})=> {
     await page.click('//*[@id="leftPanel"]/ul/li[8]/a') 
     console.log("successfully logged out")
-    console.log("-------")
+    
     
   })
   
